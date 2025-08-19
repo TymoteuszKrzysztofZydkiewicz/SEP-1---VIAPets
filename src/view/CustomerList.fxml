@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<!-- This FXML file defines the layout for table view of all customers.
+     Each table column contains information about the customer such as
+     name, phone number, street, house number, city and zip code.
+
+     Action buttons like add customer, remove customer and edit customer are also defined here.
+-->
+
+
+<AnchorPane prefHeight="600.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CustomerListController">
+    <children>
+
+        <TableView id="customerTable" fx:id="customerTable" layoutX="16.0" layoutY="90.0" prefHeight="419.0" prefWidth="870.0">
+            <columns>
+
+                <TableColumn fx:id="nameColumn" prefWidth="144.8" text="Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name" />
+                    </cellValueFactory>
+                </TableColumn>
+
+
+                <TableColumn fx:id="phoneColumn" prefWidth="144.8" text="Phone">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="phoneNumber" />
+                    </cellValueFactory>
+                </TableColumn>
+
+
+                <TableColumn fx:id="streetColumn" prefWidth="144.8" text="Street">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="address.street" />
+                    </cellValueFactory>
+                </TableColumn>
+
+
+                <TableColumn fx:id="houseNumberColumn" prefWidth="144.8" text="House Number">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="address.houseNumber" />
+                    </cellValueFactory>
+                </TableColumn>
+
+
+                <TableColumn fx:id="cityColumn" prefWidth="144.8" text="City">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="address.city" />
+                    </cellValueFactory>
+                </TableColumn>
+
+
+                <TableColumn fx:id="zipCodeColumn" prefWidth="144.8" text="Zip Code">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="address.zipCode" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+
+
+        <Button fx:id="addButton" layoutX="151.0" layoutY="530.0" onAction="#handleAddCustomer" text="Add Customer" />
+
+
+        <Button fx:id="editButton" layoutX="402.0" layoutY="530.0" onAction="#handleEditButtonAction" text="Edit Customer" />
+
+        <Button fx:id="removeButton" layoutX="653.0" layoutY="530.0" onAction="#handleRemoveButtonAction" text="Remove Customer" />
+
+        <Label alignment="CENTER" layoutX="325.0" layoutY="14.0" text="Customers List">
+            <font>
+                <Font size="38.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+body {
+    background-color: #F4F9E0;
+    color: #268A8D;
+}
+/* Header section styling */
+.title {
+    background-color: #268A8D;
+    color:  #F4F9E0;
+    padding: 60px ;
+    text-align: center;
+}
+
+/* Vision section styling */
+.vision {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    h2 {
+        color: #f98D65;
+    }
+}
+
+/* Timeline section styling */
+.history {
+    padding: 40px 0;
+}
+
+/* Timeline item styling */
+.years {
+    margin-bottom: 40px;
+}
+
+/* Image styling in timeline */
+.years img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Timeline content box styling */
+.years .content {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- This FXML file defines the view layout for adding sale.
+     Each Vbox contains labels, combo boxes and text fields for specific sale details
+     such as pet, pet's name, sale's date and price.
+
+     Action buttons like save, cancel are also defined here.
+-->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SaleAddEditController">
+    <children>
+        <ScrollPane fitToHeight="true" fitToWidth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <content>
+                <VBox alignment="TOP_CENTER" prefWidth="485.0" spacing="20.0" style="-fx-padding: 20;">
+                    <children>
+
+                        <Label style="-fx-font-size: 20px; -fx-padding: 10px;" text="Sale Management">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+
+
+                        <VBox spacing="10.0">
+                            <Label text="Pet information" underline="true">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </Label>
+                     <Label text="Pet:" />
+                     <ComboBox fx:id="petComboBox" onAction="#petUpdated" prefHeight="25.0" prefWidth="493.0" />
+                            <HBox spacing="10.0" />
+                            <HBox spacing="10.0" />
+                     <Label text="Pet name:" />
+                     <ComboBox fx:id="petNameComboBox" prefHeight="25.0" prefWidth="493.0" />
+                        </VBox>
+
+
+                        <VBox spacing="10.0" style="-fx-padding: 20 0 0 0;">
+                            <Label text="Sale Date" underline="true">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </Label>
+                            <Label text="Date:" />
+                            <DatePicker fx:id="date" promptText="00/00/0000" />
+                        </VBox>
+
+
+                        <VBox spacing="10.0" style="-fx-padding: 20 0 0 0;">
+                            <Label text="Customer information" underline="true">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </Label>
+                            <Label text="Customer name:" />
+                     <ComboBox fx:id="customerComboBox" prefHeight="25.0" prefWidth="519.0" />
+                        </VBox>
+
+
+                        <VBox spacing="10.0" style="-fx-padding: 20 0 0 0;">
+                            <Label text="Payment" underline="true">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </Label>
+                            <Label text="Price:" />
+                            <TextField fx:id="priceField" promptText="Enter price" />
+                        </VBox>
+
+
+                        <HBox alignment="CENTER" spacing="20.0" style="-fx-padding: 20;">
+                            <Button fx:id="saveButton" onAction="#handleSaveAction" text="Save" />
+                            <Button fx:id="cancelButton" onAction="#handleCancelAction" text="Cancel" />
+                        </HBox>
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

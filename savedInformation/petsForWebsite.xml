@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pets>
+<Fish>
+	<species>Ocellaris clownfish</species>
+	<name>Nemo</name>
+	<age>2</age>
+	<color>Orange</color>
+	<gender>Male</gender>
+	<price>500.0</price>
+</Fish>
+</pets>
+

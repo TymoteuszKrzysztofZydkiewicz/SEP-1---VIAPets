@@ -1,0 +1,77 @@
+.navbar-custom
+{
+    background-color: #268A8D;
+}
+
+.navbar-brand img
+{
+    width: 212px;
+}
+
+.navbar-custom .navbar-nav
+{
+    width: 100%;
+}
+
+.navbar-custom .nav-item
+{
+    width: 100%;
+}
+
+.navbar-custom .nav-link
+{
+    color: #F4F9E0;
+    transition: ease-in-out .2s;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.navbar-custom .nav-link:hover, .navbar-custom .active
+{
+    color: #F98D65!important;
+}
+
+.navbar-custom .navbar-brand img
+{
+    border-radius: 5px;
+}
+
+.navbar-custom .navbar-toggler
+{
+    border-color: #F4F9E0;
+    box-shadow: none;
+    transition: ease-in-out .2s;
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+}
+
+.navbar-toggler-icon svg path {
+    stroke: #F4F9E0;
+    transition: ease-in-out .2s;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon svg path {
+    stroke: #F98D65;
+}
+
+.navbar-custom .navbar-toggler:hover
+{
+   border-color: #F98D65; 
+}
+
+@media only screen and (max-width: 576px)
+{
+    .navbar-custom .nav-link
+    {
+        font-size: 1.5rem;
+        letter-spacing: .5px;
+    }
+
+    .navbar-brand img
+    {
+        width: 150px;
+    }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<!-- This FXML file defines the view layout for tab pane of all tables.
+     Each tab contains a table of all kennel bookings, customers, sales, and pets.
+-->
+
+<AnchorPane prefHeight="600.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.TabPaneController">
+    <children>
+        <TabPane fx:id="tabPane" prefHeight="600.0" prefWidth="902.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" styleClass="equal-tabs">
+            <tabs>
+                <Tab fx:id="tab1" text="Bookings" />
+                <Tab fx:id="tab2" text="Customers" />
+                <Tab fx:id="tab3" text="Sales" />
+                <Tab fx:id="tab4" text="Pets" />
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<!-- This FXML file defines the layout for table view of all sales.
+     Each table column contains information about the sales such as
+     pet's name, customer's name, sale's date and price.
+
+     Action buttons like add sale, remove sale, edit sale, and view sale are also defined here.
+-->
+<AnchorPane prefHeight="600.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SaleListController">
+
+    <children>
+
+        <TableView fx:id="salesTable" layoutX="16.0" layoutY="90.0" prefHeight="419.0" prefWidth="870.0">
+            <columns>
+
+                <TableColumn fx:id="petName" prefWidth="216.5" text="Pet name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name" />
+                    </cellValueFactory>
+                </TableColumn>
+
+
+                <TableColumn fx:id="customerName" prefWidth="216.5" text="Customer name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="phoneNumber" />
+                    </cellValueFactory>
+                </TableColumn>
+
+
+                <TableColumn fx:id="saleDate" prefWidth="216.5" text="Date">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="address.houseNumber" />
+                    </cellValueFactory>
+                </TableColumn>
+
+
+                <TableColumn fx:id="salePrice" prefWidth="216.5" text="Final price">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="address.city" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+
+
+        <Button fx:id="addButton" layoutX="100.0" layoutY="533.0" onAction="#handleAddButton" prefWidth="80.0" text="Add Sale" />
+
+
+        <Button fx:id="seeDetailsButton" layoutX="500.0" layoutY="533.0" onAction="#handleSeeDetailsButton" prefWidth="100.0" text="View Sale" />
+
+        <Button fx:id="remove" layoutX="700.0" layoutY="533.0" onAction="#handleRemoveButton" prefWidth="100.0" text="Remove Sale" />
+
+
+        <Label alignment="CENTER" layoutX="379.0" layoutY="14.0" text="Sales List">
+            <font>
+                <Font size="38.0" />
+            </font>
+        </Label>
+      <Button fx:id="editButton" layoutX="300.0" layoutY="533.0" onAction="#handleEditButton" prefWidth="80.0" text="Edit Sale" />
+    </children>
+</AnchorPane>

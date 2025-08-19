@@ -1,0 +1,87 @@
+body
+{
+    background-color: #F4F9E0;
+    color: #268A8D;
+}
+h2
+{
+    color: #F98D65 ;
+}
+.diffrent-color
+{
+    color: #5EBB93;
+}
+strong
+{
+    color: red;
+}
+.vision {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+body {
+    background-color: #F4F9E0;
+    color: #268A8D;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.card {
+    background-color: #F4F9E0;
+    color: #268A8D;
+    border: none;
+}
+.card-title {
+    color: #268A8D;
+}
+.card-text {
+    color: #5EBB93;
+}
+.link-style {
+    color: #268A8D;
+    text-decoration: underline;
+}
+.vision2
+{
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.vision3
+{
+    background-color: black;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.big-logo
+{
+    box-sizing: border-box;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+h5
+{
+    font-size: 90%;
+}
+.news p
+{
+    font-size: 80%;
+}
+
+.container h1
+{
+    color: #F98D65;
+    letter-spacing: 2px;
+}

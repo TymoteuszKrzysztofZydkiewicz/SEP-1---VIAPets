@@ -1,0 +1,38 @@
+body
+{
+    background-color: #F4F9E0;
+    color: #268A8D;
+}
+h2
+{
+    color: #F98D65 ;
+}
+header
+{
+    background-color: #268A8D;
+    color: #F4F9E0;
+}
+
+.carousel .carousel-item img
+{
+    border-radius: 0.375rem;
+}
+
+.carousel, .img-fluid
+{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+strong
+{
+    color: red;
+}
+
+.vision {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}

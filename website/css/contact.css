@@ -1,0 +1,112 @@
+html, body {
+    height: 100%;
+    background-color: #f4f9e0; 
+    margin: 0;
+    display: flex; 
+    flex-direction: column;
+    color: #268A8D;
+}
+
+div {
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1, .div2, .div3, .div4, .div5 {
+    background-color: #8AD1C5;
+    margin: 30px; /* Space between divs */
+    flex: 1 1 500px; /* Responsive flex item */
+    max-width: 400px; /* Max width to maintain layout */
+    height: auto;
+    border: 5px solid #F98D65; /* Border around the employee cards */
+}
+
+.role_main {
+    text-align: center;
+    margin-top: 10px;
+}
+
+img {
+    width: 100%; /* Adjust to be responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px;
+    margin-bottom: 10px; 
+
+}
+
+.title {
+    background-color: #268A8D;
+    color: #F4F9E0;
+    padding: 60px;
+    text-align: center;
+}
+
+.employee-image {
+    width: 130px; 
+    height: 150px; 
+    object-fit: cover; /* Ensure image covers the area */
+    border-radius: 50%; /* Makes the image circular */
+
+}
+
+.employee-card {
+    margin-bottom: 50px; 
+    margin-top: 50px;
+}
+
+.contact-title {
+    margin-bottom: 40px; 
+}
+
+.contact-section {
+    padding: 30px; 
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+ body {
+    background-color: #f4f9e0; 
+}
+
+.container {
+    flex: 1;
+} 
+
+.contact-title {
+    background-color: #268A8D;
+    color: #F4F9E0;
+    padding: 60px;
+    text-align: center;}
+
+.employee-image {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 50%;
+}
+
+.vision {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.row
+{
+    padding: 0 40px;
+    width: 100%;
+    margin: 0;
+}

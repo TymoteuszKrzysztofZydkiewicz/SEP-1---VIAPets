@@ -1,0 +1,29 @@
+.animal-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: #268A8D;
+}
+.animal-card img {
+    height: 200px;
+    object-fit: cover;
+}
+.animal-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.animal-card-price {
+    font-size: 1.2rem;
+    color: #28a745;
+}
+.pets
+{
+    background-color: #F4F9E0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.no-pets-alert
+{
+    display: none;
+    width: 100%;
+}

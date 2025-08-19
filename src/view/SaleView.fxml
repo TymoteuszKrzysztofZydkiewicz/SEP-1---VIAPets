@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- This FXML file defines the view layout for kennel booking's information.
+     Each Vbox contains labels, contains information for specific details of kennel booking
+     such as pet, pet's name, pet's breed, pet's age, pet's color, pet's gender, pet's breeder name,
+     pet's species, pet's preferred food, pet's habitat, do they bite, predator, customer's name,
+     customer's phone number, customer's address, date and price.
+
+     Action buttons like edit, cancel are also defined here.
+-->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SaleViewController">
+    <children>
+
+        <ScrollPane fitToHeight="true" fitToWidth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <content>
+                <VBox alignment="TOP_CENTER" prefWidth="485.0" spacing="20.0" style="-fx-padding: 20;">
+                    <children>
+
+                        <Label style="-fx-font-size: 20px; -fx-padding: 10px;" text="Sale Info">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+
+                        <VBox spacing="10.0">
+                            <Label text="Pet Information" underline="true">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </Label>
+
+                            <HBox spacing="10.0">
+                                <Label text="Pet:" />
+                                <Label fx:id="pet" />
+                            </HBox>
+                            <HBox spacing="10.0">
+                                <Label text="Pet Name:" />
+                                <Label fx:id="petNameFieldInfo" />
+                            </HBox>
+                            <HBox spacing="10.0">
+                                <Label text="Pet Breed:" />
+                                <Label fx:id="petBreedFieldInfo" />
+                            </HBox>
+                            <HBox spacing="10.0">
+                                <Label text="Pet Age:" />
+                                <Label fx:id="petAgeFieldInfo" />
+                            </HBox>
+                            <HBox spacing="10.0">
+                                <Label text="Pet Color:" />
+                                <Label fx:id="petColorFieldInfo" />
+                            </HBox>
+                            <HBox spacing="10.0">
+                                <Label text="Pet Gender:" />
+                                <Label fx:id="petGenderFieldInfo" />
+                            </HBox>
+                            <HBox spacing="10.0">
+                                <Label text="Breeder Name:" />
+                                <Label fx:id="breederNameFieldInfo" />
+                            </HBox>
+                            <HBox spacing="10.0">
+                                <Label text="Species:" />
+                                <Label fx:id="speciesFieldInfo" />
+                            </HBox>
+                            <HBox spacing="10.0">
+                                <Label text="Preferred Food:" />
+                                <Label fx:id="preferredFoodFieldInfo" />
+                            </HBox>
+                            <HBox spacing="10.0">
+                                <Label text="Habitat:" />
+                                <Label fx:id="habitatFieldInfo" />
+                            </HBox>
+                            <HBox spacing="10.0">
+                                <Label text="Do They Bite?" />
+                                <Label fx:id="doTheyBiteInfo" />
+                            </HBox>
+                            <HBox spacing="10.0">
+                                <Label text="Is Predator?" />
+                                <Label fx:id="isPredatorInfo" />
+                            </HBox>
+                        </VBox>
+
+                        <VBox spacing="10.0" style="-fx-padding: 20 0 0 0;">
+                            <Label text="Sale Date" underline="true">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </Label>
+                            <HBox spacing="10.0">
+                                <Label text="Date:" />
+                                <Label fx:id="dateInfo" />
+                            </HBox>
+                        </VBox>
+
+                        <VBox spacing="10.0" style="-fx-padding: 20 0 0 0;">
+                            <Label text="Customer Information" underline="true">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </Label>
+                            <HBox spacing="10.0">
+                                <Label text="Name:" />
+                                <Label fx:id="nameField" />
+                            </HBox>
+                            <HBox spacing="10.0">
+                                <Label text="Phone Number:" />
+                                <Label fx:id="phoneField" />
+                            </HBox>
+                            <HBox spacing="10.0">
+                                <Label text="Street:" />
+                                <Label fx:id="streetField" />
+                            </HBox>
+                            <HBox spacing="10.0">
+                                <Label text="House Number:" />
+                                <Label fx:id="houseField" />
+                            </HBox>
+                            <HBox spacing="10.0">
+                                <Label text="City:" />
+                                <Label fx:id="cityField" />
+                            </HBox>
+                            <HBox spacing="10.0">
+                                <Label text="Post Code:" />
+                                <Label fx:id="postCodeField" />
+                            </HBox>
+                        </VBox>
+
+                        <VBox spacing="10.0" style="-fx-padding: 20 0 0 0;">
+                            <Label text="Payment" underline="true">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </Label>
+                            <HBox spacing="10.0">
+                                <Label text="Price:" />
+                                <Label fx:id="priceField" />
+                            </HBox>
+                        </VBox>
+
+                        <HBox alignment="CENTER" spacing="20.0" style="-fx-padding: 20;">
+                            <Button fx:id="editButton" onAction="#handleEditAction" text="Edit" />
+                            <Button fx:id="closeButton" onAction="#handleCloseAction" text="Close" />
+                        </HBox>
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

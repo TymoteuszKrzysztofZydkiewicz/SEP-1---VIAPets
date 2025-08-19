@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<!-- This FXML file defines the view layout for adding customer.
+     Each Vbox contains labels and text fields for specific customer details
+     such as name, phone number, street, zip code, city and house number.
+
+     Action buttons like save, cancel are also defined here.
+-->
+
+<AnchorPane prefHeight="367.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CustomerAddEditController">
+   <children>
+      <BorderPane layoutX="19.0" layoutY="15.0" prefHeight="369.0" prefWidth="562.0">
+         <left>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="615.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="57.0" layoutY="114.0" text="Name:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="57.0" layoutY="207.0" text="Street:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="36.0" layoutY="160.0" text="Phone nr:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nameField" layoutX="106.0" layoutY="111.0" promptText="Full name" />
+                  <TextField fx:id="streetField" layoutX="106.0" layoutY="204.0" promptText="street" />
+                  <TextField fx:id="phoneField" layoutX="106.0" layoutY="157.0" promptText="12345678" />
+                  <TextField fx:id="zipCodeField" layoutX="361.0" layoutY="204.0" promptText="Zipcode" />
+                  <TextField fx:id="cityField" layoutX="361.0" layoutY="111.0" promptText="City/Town" />
+                  <TextField fx:id="houseNumberField" layoutX="361.0" layoutY="157.0" promptText="House number" />
+                  <Label layoutX="318.0" layoutY="114.0" text="City:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="285.0" layoutY="207.0" text="Post Code:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="295.0" layoutY="160.0" text="House nr:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="saveButton" layoutX="160.0" layoutY="274.0" onAction="#handleSaveCustomer" text="Save Customer" />
+                  <Button fx:id="cancelButton" layoutX="354.0" layoutY="274.0" onAction="#handleCancel" text="Cancel" AnchorPane.leftAnchor="354.0" />
+                  <Label fx:id="statusLabel" layoutX="237.0" text="Customer">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
